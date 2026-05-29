@@ -1,0 +1,85 @@
+body { 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fundo com degradê em tons de rosa escuro e roxo para destacar o card */
+    background: linear-gradient(135deg, #2d0b1e 0%, #4a0e2e 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container { 
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 20px;
+    /* Efeito vítreo (Glassmorphism) com brilho rosa */
+    background: rgba(255, 182, 193, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img { 
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* Borda Rosa Choque */
+    border: 4px solid #ff69b4;
+    margin-bottom: 15px; 
+    object-fit: cover;
+    /* Brilho externo na imagem */
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+h1 { 
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle { 
+    /* Rosa pastel para o subtítulo */
+    color: #ffb6c1;
+    margin-bottom: 30px;
+    font-weight: 400; 
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.links { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.link-card { 
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 105, 180, 0.2);
+    transition: all 0.3s ease; 
+    font-weight: 500;
+}
+
+.link-card:hover { 
+    /* No hover, o botão fica rosa sólido com texto escuro */
+    background: #ff69b4;
+    color: #2d0b1e;
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+footer { 
+    margin-top: 40px;
+    font-size: 0.75rem;
+    color: #ffb6c1;
+    opacity: 0.8;
+}
